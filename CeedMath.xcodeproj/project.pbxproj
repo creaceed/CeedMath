@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		050DB8AB148933AD00812267 /* C3Math-conversions.h in Headers */ = {isa = PBXBuildFile; fileRef = 050DB8A0148933AD00812267 /* C3Math-conversions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		050DB8AC148933AD00812267 /* C3Math-generic-extern.h in Headers */ = {isa = PBXBuildFile; fileRef = 050DB8A1148933AD00812267 /* C3Math-generic-extern.h */; };
+		050DB8AD148933AD00812267 /* C3Math-generic-inline.h in Headers */ = {isa = PBXBuildFile; fileRef = 050DB8A2148933AD00812267 /* C3Math-generic-inline.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		050DB8AE148933AD00812267 /* C3Math-generic-defs.h in Headers */ = {isa = PBXBuildFile; fileRef = 050DB8A3148933AD00812267 /* C3Math-generic-defs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		050DB8AF148933AD00812267 /* C3Math-generic-defs.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 050DB8A4148933AD00812267 /* C3Math-generic-defs.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		050DB8B0148933AD00812267 /* C3Math-generic-protos.h in Headers */ = {isa = PBXBuildFile; fileRef = 050DB8A5148933AD00812267 /* C3Math-generic-protos.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		050DB8B1148933AD00812267 /* C3Math.c in Sources */ = {isa = PBXBuildFile; fileRef = 050DB8A6148933AD00812267 /* C3Math.c */; };
+		050DB8B2148933AD00812267 /* C3Math.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 050DB8A7148933AD00812267 /* C3Math.cpp */; };
+		050DB8B3148933AD00812267 /* C3Math.h in Headers */ = {isa = PBXBuildFile; fileRef = 050DB8A8148933AD00812267 /* C3Math.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		050DB8B4148933AD00812267 /* C3Math.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 050DB8A9148933AD00812267 /* C3Math.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		050DB8B5148933AD00812267 /* C3TriangleBoxOverlap-generic.h in Headers */ = {isa = PBXBuildFile; fileRef = 050DB8AA148933AD00812267 /* C3TriangleBoxOverlap-generic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0527787D148B7339000DF81B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 0527787C148B7339000DF81B /* main.c */; };
+		05277884148B7366000DF81B /* libCeedMath.mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 050DB891148932FA00812267 /* libCeedMath.mac.a */; };
+		0527788C148BAA66000DF81B /* CeedMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 0527788B148BAA66000DF81B /* CeedMath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0527788D148BAA66000DF81B /* CeedMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 0527788B148BAA66000DF81B /* CeedMath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05CBD5F91489601F008AB772 /* C3Math-conversions.h in Headers */ = {isa = PBXBuildFile; fileRef = 050DB8A0148933AD00812267 /* C3Math-conversions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05CBD5FA1489601F008AB772 /* C3Math-generic-extern.h in Headers */ = {isa = PBXBuildFile; fileRef = 050DB8A1148933AD00812267 /* C3Math-generic-extern.h */; };
+		05CBD5FB1489601F008AB772 /* C3Math-generic-inline.h in Headers */ = {isa = PBXBuildFile; fileRef = 050DB8A2148933AD00812267 /* C3Math-generic-inline.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05CBD5FC1489601F008AB772 /* C3Math-generic-defs.h in Headers */ = {isa = PBXBuildFile; fileRef = 050DB8A3148933AD00812267 /* C3Math-generic-defs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05CBD5FD1489601F008AB772 /* C3Math-generic-defs.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 050DB8A4148933AD00812267 /* C3Math-generic-defs.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		05CBD5FE1489601F008AB772 /* C3Math-generic-protos.h in Headers */ = {isa = PBXBuildFile; fileRef = 050DB8A5148933AD00812267 /* C3Math-generic-protos.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05CBD5FF1489601F008AB772 /* C3Math.h in Headers */ = {isa = PBXBuildFile; fileRef = 050DB8A8148933AD00812267 /* C3Math.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05CBD6001489601F008AB772 /* C3Math.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 050DB8A9148933AD00812267 /* C3Math.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		05CBD6011489601F008AB772 /* C3TriangleBoxOverlap-generic.h in Headers */ = {isa = PBXBuildFile; fileRef = 050DB8AA148933AD00812267 /* C3TriangleBoxOverlap-generic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05CBD6031489601F008AB772 /* C3Math.c in Sources */ = {isa = PBXBuildFile; fileRef = 050DB8A6148933AD00812267 /* C3Math.c */; };
+		05CBD6041489601F008AB772 /* C3Math.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 050DB8A7148933AD00812267 /* C3Math.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05277885148B73B6000DF81B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 050DB888148932FA00812267 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 050DB890148932FA00812267;
+			remoteInfo = CeedMath.mac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		05277877148B7339000DF81B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		050DB891148932FA00812267 /* libCeedMath.mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCeedMath.mac.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		050DB8A0148933AD00812267 /* C3Math-conversions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "C3Math-conversions.h"; sourceTree = "<group>"; };
+		050DB8A1148933AD00812267 /* C3Math-generic-extern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "C3Math-generic-extern.h"; sourceTree = "<group>"; };
+		050DB8A2148933AD00812267 /* C3Math-generic-inline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "C3Math-generic-inline.h"; sourceTree = "<group>"; };
+		050DB8A3148933AD00812267 /* C3Math-generic-defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "C3Math-generic-defs.h"; sourceTree = "<group>"; };
+		050DB8A4148933AD00812267 /* C3Math-generic-defs.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "C3Math-generic-defs.hpp"; sourceTree = "<group>"; };
+		050DB8A5148933AD00812267 /* C3Math-generic-protos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "C3Math-generic-protos.h"; sourceTree = "<group>"; };
+		050DB8A6148933AD00812267 /* C3Math.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = C3Math.c; sourceTree = "<group>"; };
+		050DB8A7148933AD00812267 /* C3Math.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = C3Math.cpp; sourceTree = "<group>"; };
+		050DB8A8148933AD00812267 /* C3Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C3Math.h; sourceTree = "<group>"; };
+		050DB8A9148933AD00812267 /* C3Math.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = C3Math.hpp; sourceTree = "<group>"; };
+		050DB8AA148933AD00812267 /* C3TriangleBoxOverlap-generic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "C3TriangleBoxOverlap-generic.h"; sourceTree = "<group>"; };
+		05277879148B7339000DF81B /* CeedMathDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CeedMathDemo; sourceTree = BUILT_PRODUCTS_DIR; };
+		0527787C148B7339000DF81B /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		0527788B148BAA66000DF81B /* CeedMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CeedMath.h; sourceTree = "<group>"; };
+		05CBD6091489601F008AB772 /* libCeedMath.ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCeedMath.ios.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		050DB88E148932FA00812267 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05277876148B7339000DF81B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05277884148B7366000DF81B /* libCeedMath.mac.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05CBD6051489601F008AB772 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		050DB886148932FA00812267 = {
+			isa = PBXGroup;
+			children = (
+				050DB89F1489332C00812267 /* Sources */,
+				0527787B148B7339000DF81B /* CeedMathDemo */,
+				050DB892148932FA00812267 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		050DB892148932FA00812267 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				050DB891148932FA00812267 /* libCeedMath.mac.a */,
+				05CBD6091489601F008AB772 /* libCeedMath.ios.a */,
+				05277879148B7339000DF81B /* CeedMathDemo */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		050DB89F1489332C00812267 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0527788B148BAA66000DF81B /* CeedMath.h */,
+				050DB8A0148933AD00812267 /* C3Math-conversions.h */,
+				050DB8A1148933AD00812267 /* C3Math-generic-extern.h */,
+				050DB8A2148933AD00812267 /* C3Math-generic-inline.h */,
+				050DB8A3148933AD00812267 /* C3Math-generic-defs.h */,
+				050DB8A4148933AD00812267 /* C3Math-generic-defs.hpp */,
+				050DB8A5148933AD00812267 /* C3Math-generic-protos.h */,
+				050DB8AA148933AD00812267 /* C3TriangleBoxOverlap-generic.h */,
+				050DB8A6148933AD00812267 /* C3Math.c */,
+				050DB8A7148933AD00812267 /* C3Math.cpp */,
+				050DB8A8148933AD00812267 /* C3Math.h */,
+				050DB8A9148933AD00812267 /* C3Math.hpp */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		0527787B148B7339000DF81B /* CeedMathDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0527787C148B7339000DF81B /* main.c */,
+			);
+			path = CeedMathDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		050DB88F148932FA00812267 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				050DB8AB148933AD00812267 /* C3Math-conversions.h in Headers */,
+				050DB8AC148933AD00812267 /* C3Math-generic-extern.h in Headers */,
+				050DB8AD148933AD00812267 /* C3Math-generic-inline.h in Headers */,
+				050DB8AE148933AD00812267 /* C3Math-generic-defs.h in Headers */,
+				050DB8AF148933AD00812267 /* C3Math-generic-defs.hpp in Headers */,
+				050DB8B0148933AD00812267 /* C3Math-generic-protos.h in Headers */,
+				050DB8B3148933AD00812267 /* C3Math.h in Headers */,
+				050DB8B4148933AD00812267 /* C3Math.hpp in Headers */,
+				050DB8B5148933AD00812267 /* C3TriangleBoxOverlap-generic.h in Headers */,
+				0527788C148BAA66000DF81B /* CeedMath.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05CBD5F81489601F008AB772 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05CBD5F91489601F008AB772 /* C3Math-conversions.h in Headers */,
+				05CBD5FA1489601F008AB772 /* C3Math-generic-extern.h in Headers */,
+				05CBD5FB1489601F008AB772 /* C3Math-generic-inline.h in Headers */,
+				05CBD5FC1489601F008AB772 /* C3Math-generic-defs.h in Headers */,
+				05CBD5FD1489601F008AB772 /* C3Math-generic-defs.hpp in Headers */,
+				05CBD5FE1489601F008AB772 /* C3Math-generic-protos.h in Headers */,
+				05CBD5FF1489601F008AB772 /* C3Math.h in Headers */,
+				05CBD6001489601F008AB772 /* C3Math.hpp in Headers */,
+				05CBD6011489601F008AB772 /* C3TriangleBoxOverlap-generic.h in Headers */,
+				0527788D148BAA66000DF81B /* CeedMath.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		050DB890148932FA00812267 /* CeedMath.mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 050DB895148932FA00812267 /* Build configuration list for PBXNativeTarget "CeedMath.mac" */;
+			buildPhases = (
+				050DB88F148932FA00812267 /* Headers */,
+				050DB88D148932FA00812267 /* Sources */,
+				050DB88E148932FA00812267 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CeedMath.mac;
+			productName = CeedMath;
+			productReference = 050DB891148932FA00812267 /* libCeedMath.mac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		05277878148B7339000DF81B /* CeedMathDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05277882148B7339000DF81B /* Build configuration list for PBXNativeTarget "CeedMathDemo" */;
+			buildPhases = (
+				05277875148B7339000DF81B /* Sources */,
+				05277876148B7339000DF81B /* Frameworks */,
+				05277877148B7339000DF81B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05277886148B73B6000DF81B /* PBXTargetDependency */,
+			);
+			name = CeedMathDemo;
+			productName = CeedMathDemo;
+			productReference = 05277879148B7339000DF81B /* CeedMathDemo */;
+			productType = "com.apple.product-type.tool";
+		};
+		05CBD5F71489601F008AB772 /* CeedMath.ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05CBD6061489601F008AB772 /* Build configuration list for PBXNativeTarget "CeedMath.ios" */;
+			buildPhases = (
+				05CBD5F81489601F008AB772 /* Headers */,
+				05CBD6021489601F008AB772 /* Sources */,
+				05CBD6051489601F008AB772 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CeedMath.ios;
+			productName = CeedMath;
+			productReference = 05CBD6091489601F008AB772 /* libCeedMath.ios.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		050DB888148932FA00812267 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = Creaceed;
+			};
+			buildConfigurationList = 050DB88B148932FA00812267 /* Build configuration list for PBXProject "CeedMath" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 050DB886148932FA00812267;
+			productRefGroup = 050DB892148932FA00812267 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				050DB890148932FA00812267 /* CeedMath.mac */,
+				05CBD5F71489601F008AB772 /* CeedMath.ios */,
+				05277878148B7339000DF81B /* CeedMathDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		050DB88D148932FA00812267 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				050DB8B1148933AD00812267 /* C3Math.c in Sources */,
+				050DB8B2148933AD00812267 /* C3Math.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05277875148B7339000DF81B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0527787D148B7339000DF81B /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05CBD6021489601F008AB772 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05CBD6031489601F008AB772 /* C3Math.c in Sources */,
+				05CBD6041489601F008AB772 /* C3Math.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05277886148B73B6000DF81B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 050DB890148932FA00812267 /* CeedMath.mac */;
+			targetProxy = 05277885148B73B6000DF81B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		050DB893148932FA00812267 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		050DB894148932FA00812267 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		050DB896148932FA00812267 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"\"$(DSTROOT)/usr/local/include\"",
+					"\"$(CONFIGURATION_BUILD_DIR)/usr/local/include\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/CeedMath;
+			};
+			name = Debug;
+		};
+		050DB897148932FA00812267 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"\"$(DSTROOT)/usr/local/include\"",
+					"\"$(CONFIGURATION_BUILD_DIR)/usr/local/include\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/CeedMath;
+			};
+			name = Release;
+		};
+		05277880148B7339000DF81B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				HEADER_SEARCH_PATHS = (
+					"\"$(DSTROOT)/usr/local/include\"",
+					"\"$(CONFIGURATION_BUILD_DIR)/usr/local/include\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		05277881148B7339000DF81B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				HEADER_SEARCH_PATHS = (
+					"\"$(DSTROOT)/usr/local/include\"",
+					"\"$(CONFIGURATION_BUILD_DIR)/usr/local/include\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		05CBD6071489601F008AB772 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"\"$(DSTROOT)/usr/local/include\"",
+					"\"$(CONFIGURATION_BUILD_DIR)/usr/local/include\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/CeedMath;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		05CBD6081489601F008AB772 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"\"$(DSTROOT)/usr/local/include\"",
+					"\"$(CONFIGURATION_BUILD_DIR)/usr/local/include\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/CeedMath;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		050DB88B148932FA00812267 /* Build configuration list for PBXProject "CeedMath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				050DB893148932FA00812267 /* Debug */,
+				050DB894148932FA00812267 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		050DB895148932FA00812267 /* Build configuration list for PBXNativeTarget "CeedMath.mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				050DB896148932FA00812267 /* Debug */,
+				050DB897148932FA00812267 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05277882148B7339000DF81B /* Build configuration list for PBXNativeTarget "CeedMathDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05277880148B7339000DF81B /* Debug */,
+				05277881148B7339000DF81B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05CBD6061489601F008AB772 /* Build configuration list for PBXNativeTarget "CeedMath.ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05CBD6071489601F008AB772 /* Debug */,
+				05CBD6081489601F008AB772 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 050DB888148932FA00812267 /* Project object */;
+}
