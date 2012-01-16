@@ -22,6 +22,8 @@ int main (int argc, const char * argv[])
 	n = vec3_norm_f(c);
 	printf("Norm of c (c = a-b): %f\n", n);
 	
+	// chaining
+	n = vec3_norm_f(vec3_subtract_f(c, a, b));
 	
     return 0;
 }
