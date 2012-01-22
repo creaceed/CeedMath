@@ -352,6 +352,7 @@
 		050DB896148932FA00812267 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				EXECUTABLE_PREFIX = lib;
 				HEADER_SEARCH_PATHS = (
 					"\"$(DSTROOT)/usr/local/include\"",
@@ -365,6 +366,7 @@
 		050DB897148932FA00812267 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				EXECUTABLE_PREFIX = lib;
 				HEADER_SEARCH_PATHS = (
 					"\"$(DSTROOT)/usr/local/include\"",
@@ -378,7 +380,7 @@
 		05277880148B7339000DF81B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				HEADER_SEARCH_PATHS = (
 					"\"$(DSTROOT)/usr/local/include\"",
 					"\"$(CONFIGURATION_BUILD_DIR)/usr/local/include\"",
@@ -390,7 +392,7 @@
 		05277881148B7339000DF81B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				HEADER_SEARCH_PATHS = (
 					"\"$(DSTROOT)/usr/local/include\"",
 					"\"$(CONFIGURATION_BUILD_DIR)/usr/local/include\"",
