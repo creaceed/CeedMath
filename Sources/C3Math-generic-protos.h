@@ -12,6 +12,8 @@ c3inline vecn_x c3fx(vec2_lerp)(vec2_x res, const vec2_x a, const vec2_x b, val_
 c3inline val_x  c3fx(vec2_square_norm)(const vec2_x a);
 c3inline val_x  c3fx(vec2_norm)(const vec2_x a);
 c3inline val_x  c3fx(vec2_distance)(const vec2_x a, const vec2_x b);
+c3inline vecn_x c3fx(vec2_multiply)(vec2_x res, const mat2_x mat, const vec2_x v);
+c3inline vecn_x c3fx(vec2_transform)(vec2_x res, const mat3_x mat, const vec2_x v);
 
 // mat2
 #pragma mark -
@@ -48,8 +50,10 @@ c3inline val_x  c3fx(vec3_square_norm)(const vec3_x a);
 c3inline val_x  c3fx(vec3_norm)(const vec3_x a);
 c3inline val_x  c3fx(vec3_distance)(const vec3_x a, const vec3_x b);
 c3inline vecn_x c3fx(vec3_normalize)(vec3_x res, const vec3_x a);
+c3inline vecn_x c3fx(vec3_homogenize)(vec3_x res, const vec3_x a);
 c3inline vecn_x c3fx(vec3_add_scaled)(vec3_x res, const vec3_x p, const vec3_x q, val_x lambda);
 c3inline vecn_x c3fx(vec3_lerp)(vec3_x res, const vec3_x a, const vec3_x b, val_x alpha);
+c3inline vecn_x c3fx(vec3_multiply)(vec3_x res, const mat3_x mat, const vec3_x v);
 c3inline vecn_x c3fx(vec3_transform)(vec3_x res, const mat4_x mat, const vec3_x v);
 c3inline vecn_x c3fx(vec3_project_x)(vec3_x res, const vec3_x a);
 c3inline vecn_x c3fx(vec3_project_y)(vec3_x res, const vec3_x a);
@@ -84,8 +88,8 @@ c3inline bool   c3fx(vec4_compare)(const vec4_x a, const vec4_x b, val_x tol);
 c3inline bool   c3fx(vec4_equal)(const vec4_x a, const vec4_x b);
 c3inline vecn_x c3fx(vec4_lerp)(vec4_x res, const vec4_x a, const vec4_x b, val_x alpha);
 c3inline vecn_x c3fx(vec4_homogenize)(vec4_x res, const vec4_x a);
-c3inline vecn_x c3fx(vec4_transform)(vec4_x res, const mat4_x mat, const vec4_x v);
-c3inline vecn_x c3fx(vec4_transform_delta)(vec4_x res, const mat4_x mat, const vec4_x v);
+c3inline vecn_x c3fx(vec4_multiply)(vec4_x res, const mat4_x mat, const vec4_x v);
+c3inline vecn_x c3fx(vec4_multiply_delta)(vec4_x res, const mat4_x mat, const vec4_x v);
 c3inline vecn_x c3fx(vec4_transpose_transform)(vec4_x res, const mat4_x m, const vec4_x v);
 c3extern bool   c3fx(vec4_solve_system)(vec4_x res, const mat4_x mat, const vec4_x ind);
 

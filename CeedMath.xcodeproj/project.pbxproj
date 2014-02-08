@@ -411,7 +411,7 @@
 					"\"$(CONFIGURATION_BUILD_DIR)/usr/local/include\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/CeedMath;
+				PUBLIC_HEADERS_FOLDER_PATH = CeedMath;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -426,7 +426,7 @@
 					"\"$(CONFIGURATION_BUILD_DIR)/usr/local/include\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/CeedMath;
+				PUBLIC_HEADERS_FOLDER_PATH = CeedMath;
 				SDKROOT = iphoneos;
 			};
 			name = Release;

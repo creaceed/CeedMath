@@ -55,7 +55,22 @@ val_x c3fx(vec2_distance)(const vec2_x a, const vec2_x b)
 	
 	return c3fx(vec2_norm)(c3fx(vec2_subtract)(diff,a,b));
 }
-
+vecn_x c3fx(vec2_multiply)(vec2_x res, const mat2_x m, const vec2_x v)
+{
+	assert(res != v);
+	
+	res[0] = m[0*2+0]*v[0] + m[0*2+1]*v[1];
+	res[1] = m[1*2+0]*v[0] + m[1*2+1]*v[1];
+	
+	return res;
+}
+vecn_x c3fx(vec2_transform)(vec2_x res, const mat3_x mat, const vec2_x v)
+{
+	vec3_x v3, r3;
+	v3[2] = 1.0;
+	
+	return c3fx(vec2_copy)(res, c3fx(vec3_homogenize)(v3, c3fx(vec3_multiply)(r3, mat, c3fx(vec2_copy)(v3, v))));
+}
 
 
 #pragma mark mat2
@@ -221,6 +236,23 @@ vecn_x c3fx(vec3_normalize)(vec3_x res, const vec3_x a)
 	
 	return res;
 }
+vecn_x c3fx(vec3_homogenize)(vec3_x res, const vec3_x a)
+{
+	if(fabs_x(a[2]) > 0.0)
+	{
+		val_x oow = 1.0f/a[2];
+		
+		res[0] = a[0]*oow;
+		res[1] = a[1]*oow;
+		res[2] = 1.0;
+		
+		return res;
+	}
+	else
+	{
+		return c3fx(vec3_copy)(res, a);
+	}
+}
 vecn_x c3fx(vec3_add_scaled)(vec3_x res, const vec3_x p, const vec3_x q, val_x lambda)
 {
 	res[0] = p[0] + lambda * q[0];
@@ -244,7 +276,17 @@ vecn_x c3fx(vec3_transform)(vec3_x res, const mat4_x mat, const vec3_x v)
 	vec4_x v4, r4;
 	v4[3] = 1.0;
 	
-	return c3fx(vec3_copy)(res, c3fx(vec4_homogenize)(v4, c3fx(vec4_transform)(r4, mat, c3fx(vec3_copy)(v4, v))));
+	return c3fx(vec3_copy)(res, c3fx(vec4_homogenize)(v4, c3fx(vec4_multiply)(r4, mat, c3fx(vec3_copy)(v4, v))));
+}
+vecn_x c3fx(vec3_multiply)(vec3_x res, const mat3_x m, const vec3_x v)
+{
+	assert(res != v);
+	
+	res[0] = m[0*3+0]*v[0] + m[0*3+1]*v[1] + m[0*3+2]*v[2];
+	res[1] = m[1*3+0]*v[0] + m[1*3+1]*v[1] + m[1*3+2]*v[2];
+	res[2] = m[2*3+0]*v[0] + m[2*3+1]*v[1] + m[2*3+2]*v[2];
+	
+	return res;
 }
 vecn_x c3fx(vec3_project_x)(vec3_x res, const vec3_x a)
 {
@@ -378,7 +420,7 @@ vecn_x c3fx(normal_transform_it)(normal_x res, const mat4_x mat_it, const normal
 	vec4_x v, v2;
 	
 	c3fx(vec3_copy)(v, src); v[3] = 0.0;
-	c3fx(vec4_transform)(v2, mat_it, v);
+	c3fx(vec4_multiply)(v2, mat_it, v);
 	return c3fx(vec3_copy)(res, v2);
 }
 
@@ -446,7 +488,7 @@ vecn_x c3fx(vec4_homogenize)(vec4_x res, const vec4_x a)
 		return c3fx(vec4_copy)(res, a);
 	}
 }
-vecn_x c3fx(vec4_transform)(vec4_x res, const mat4_x m, const vec4_x v)
+vecn_x c3fx(vec4_multiply)(vec4_x res, const mat4_x m, const vec4_x v)
 {
 	assert(res != v);
 	
@@ -457,12 +499,12 @@ vecn_x c3fx(vec4_transform)(vec4_x res, const mat4_x m, const vec4_x v)
 	
 	return res;
 }
-vecn_x c3fx(vec4_transform_delta)(vec4_x res, const mat4_x mat, const vec4_x v)
+vecn_x c3fx(vec4_multiply_delta)(vec4_x res, const mat4_x mat, const vec4_x v)
 {
 	vec4_x p1, p2, z = {0,0,0,1};
 	
-	c3fx(vec4_transform)(p1, mat, z);
-	c3fx(vec4_transform)(p2, mat, v);
+	c3fx(vec4_multiply)(p1, mat, z);
+	c3fx(vec4_multiply)(p2, mat, v);
 	
 	return c3fx(vec3_subtract)(res, p2, p1);
 }
@@ -644,7 +686,7 @@ vecn_x c3fx(plane_set_points)(plane_x res, const vec3_x a, const vec3_x b, const
 }
 vecn_x c3fx(plane_transform_it)(plane_x res, const mat4_x mat_it, const plane_x src)
 {
-	return c3fx(vec4_transform)(res, mat_it, src);
+	return c3fx(vec4_multiply)(res, mat_it, src);
 }
 
 bool c3fx(plane_transform)(plane_x res, const mat4_x mat, const plane_x src)
