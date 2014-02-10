@@ -355,8 +355,8 @@
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				EXECUTABLE_PREFIX = lib;
 				HEADER_SEARCH_PATHS = (
-					"\"$(DSTROOT)/usr/local/include\"",
-					"\"$(CONFIGURATION_BUILD_DIR)/usr/local/include\"",
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+					"\"$(OBJROOT)/UninstalledProducts\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/CeedMath;
@@ -369,8 +369,8 @@
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				EXECUTABLE_PREFIX = lib;
 				HEADER_SEARCH_PATHS = (
-					"\"$(DSTROOT)/usr/local/include\"",
-					"\"$(CONFIGURATION_BUILD_DIR)/usr/local/include\"",
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+					"\"$(OBJROOT)/UninstalledProducts\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/CeedMath;
@@ -407,8 +407,8 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				EXECUTABLE_PREFIX = lib;
 				HEADER_SEARCH_PATHS = (
-					"\"$(DSTROOT)/usr/local/include\"",
-					"\"$(CONFIGURATION_BUILD_DIR)/usr/local/include\"",
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+					"\"$(OBJROOT)/UninstalledProducts\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = CeedMath;
@@ -422,8 +422,8 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				EXECUTABLE_PREFIX = lib;
 				HEADER_SEARCH_PATHS = (
-					"\"$(DSTROOT)/usr/local/include\"",
-					"\"$(CONFIGURATION_BUILD_DIR)/usr/local/include\"",
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+					"\"$(OBJROOT)/UninstalledProducts\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = CeedMath;

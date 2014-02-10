@@ -1,4 +1,4 @@
-#include "C3Math.h"
+#include <CeedMath/C3Math.h>
 #include <stdio.h>
 
 #pragma mark globals
