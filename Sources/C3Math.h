@@ -6,7 +6,7 @@
 #include <string.h>
 #include <assert.h>
 
-#define c3inline static inline
+#define c3inline inline
 
 #ifdef __cplusplus
 #define c3extern extern "C" 

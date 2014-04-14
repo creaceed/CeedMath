@@ -3,7 +3,7 @@
 
 #include <CeedMath/C3Math.h>
 
-#define c3inline static inline
+#define c3inline inline
 
 #undef c3extern
 #define c3extern extern
