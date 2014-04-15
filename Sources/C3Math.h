@@ -6,13 +6,18 @@
 #include <string.h>
 #include <assert.h>
 
-#define c3inline inline
 
 #ifdef __cplusplus
-#define c3extern extern "C" 
+#define c3extern extern "C"
 #else
 #define c3extern extern
 #endif
+
+//#define c3inline __attribute__((always_inline, used))
+#define c3inline __attribute__((always_inline))
+
+// this is the same as NS_INLINE (but still generates warnings)
+//#define c3inline static __inline__ __attribute__((always_inline))
 
 typedef double val_d;
 typedef float val_f;
