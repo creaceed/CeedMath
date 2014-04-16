@@ -3,7 +3,7 @@
 
 #include <CeedMath/C3Math.h>
 
-#define c3inline inline
+#define c3inline __attribute__((always_inline))
 
 #undef c3extern
 #define c3extern extern
