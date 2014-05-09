@@ -176,6 +176,52 @@ vecn_x c3fx(vec3_scale)(vec3_x res, const vec3_x src, val_x scalar)
 	
 	return res;
 }
+
+vecn_x c3fx(vec3_min)(vec3_x res, const vec3_x a, const vec3_x b)
+{
+	res[0] = C3MIN(a[0], b[0]);
+	res[1] = C3MIN(a[1], b[1]);
+	res[2] = C3MIN(a[2], b[2]);
+	
+	return res;
+}
+vecn_x c3fx(vec3_max)(vec3_x res, const vec3_x a, const vec3_x b)
+{
+	res[0] = C3MAX(a[0], b[0]);
+	res[1] = C3MAX(a[1], b[1]);
+	res[2] = C3MAX(a[2], b[2]);
+	
+	return res;
+}
+
+vecn_x c3fx(vec3_step)(vec3_x res, const vec3_x edge, const vec3_x x)
+{
+	res[0] = x[0]>edge[0] ? 1.0:0.0;
+	res[1] = x[1]>edge[1] ? 1.0:0.0;
+	res[2] = x[2]>edge[2] ? 1.0:0.0;
+	
+	return res;
+}
+vecn_x c3fx(vec3_smoothstep)(vec3_x res, const vec3_x edge0, const vec3_x edge1, const vec3_x x)
+{
+	for(int i=0; i<3; i++)
+	{
+		val_x t=x[i];
+		t = (t - edge0[i]) / (edge1[i] - edge0[i]);
+		t = C3_CLAMP(t, 0.0, 1.0);
+		t = t * t * (3.0 - 2.0 * t);
+		res[i] = t;
+	}
+    return res;
+}
+vecn_x c3fx(vec3_smoothhat)(vec3_x res, const vec3_x th0, const vec3_x th1, const vec3_x th2, const vec3_x x)
+{
+	vec3_x tmp1, tmp2, tmp3, onev = {1.0,1.0,1.0};
+	
+	return c3fx(vec3_min)(res, c3fx(vec3_smoothstep)(tmp1, th0, th1, x), c3fx(vec3_subtract)(tmp3, onev, c3fx(vec3_smoothstep)(tmp2, th1, th2, x)));
+}
+
+
 bool c3fx(vec3_compare)(const vec3_x a, const vec3_x b, val_x tol)
 {
 	return (fabs_x(b[0]-a[0]) <= tol
