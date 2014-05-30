@@ -13,11 +13,21 @@
 #define c3extern extern
 #endif
 
-//#define c3inline __attribute__((always_inline, used))
-#define c3inline __attribute__((always_inline))
 
-// this is the same as NS_INLINE (but still generates warnings)
-//#define c3inline static __inline__ __attribute__((always_inline))
+
+#ifdef __APPLE__
+  #include <TargetConditionals.h>
+  #if TARGET_CPU_ARM == 1
+	#define c3inline __attribute__((always_inline))
+  #else
+    // this is the same as NS_INLINE (but still generates warnings)
+    #define c3inline static __inline__ __attribute__((always_inline, used))
+    //#define c3inline __attribute__((always_inline, used))
+    //#define c3inline __attribute__((always_inline))
+  #endif
+#else
+  #define c3inline static inline
+#endif
 
 typedef double val_d;
 typedef float val_f;

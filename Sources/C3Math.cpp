@@ -1,4 +1,4 @@
-#include "C3Math.hpp"
+#include <CeedMath/C3Math.hpp>
 #include <stdio.h>
 
 // Generic
