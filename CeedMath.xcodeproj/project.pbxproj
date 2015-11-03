@@ -417,6 +417,7 @@
 				EXECUTABLE_PREFIX = lib;
 				HEADER_SEARCH_PATHS = (
 					"\"$(BUILT_PRODUCTS_DIR)\"",
+					"\"$(OBJROOT)/UninstalledProducts/iphoneos\"",
 					"\"$(OBJROOT)/UninstalledProducts\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -434,6 +435,7 @@
 				EXECUTABLE_PREFIX = lib;
 				HEADER_SEARCH_PATHS = (
 					"\"$(BUILT_PRODUCTS_DIR)\"",
+					"\"$(OBJROOT)/UninstalledProducts/iphoneos\"",
 					"\"$(OBJROOT)/UninstalledProducts\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -489,6 +491,7 @@
 				EXECUTABLE_PREFIX = lib;
 				HEADER_SEARCH_PATHS = (
 					"\"$(BUILT_PRODUCTS_DIR)\"",
+					"\"$(OBJROOT)/UninstalledProducts/iphoneos\"",
 					"\"$(OBJROOT)/UninstalledProducts\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -555,6 +558,7 @@
 				EXECUTABLE_PREFIX = lib;
 				HEADER_SEARCH_PATHS = (
 					"\"$(BUILT_PRODUCTS_DIR)\"",
+					"\"$(OBJROOT)/UninstalledProducts/iphoneos\"",
 					"\"$(OBJROOT)/UninstalledProducts\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
