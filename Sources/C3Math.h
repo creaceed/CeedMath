@@ -18,7 +18,8 @@
 #ifdef __APPLE__
   #include <TargetConditionals.h>
   #if TARGET_CPU_ARM == 1
-	#define c3inline __attribute__((always_inline))
+	#define c3inline static __inline__ __attribute__((always_inline))
+//#define c3inline static __inline__ __attribute__((always_inline, used))
   #else
     // this is the same as NS_INLINE (but still generates warnings)
     #define c3inline static __inline__ __attribute__((always_inline, used))
