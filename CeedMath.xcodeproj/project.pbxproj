@@ -45,6 +45,8 @@
 		691539EF1D86E838001F00B3 /* CeedMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 0527788B148BAA66000DF81B /* CeedMath.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		691539F11D86E838001F00B3 /* C3Math.c in Sources */ = {isa = PBXBuildFile; fileRef = 050DB8A6148933AD00812267 /* C3Math.c */; };
 		691539F21D86E838001F00B3 /* C3Math.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 050DB8A7148933AD00812267 /* C3Math.cpp */; };
+		69DEA6281F8FC44F00B1AB7A /* stub.c in Sources */ = {isa = PBXBuildFile; fileRef = 69DEA6261F8FC44200B1AB7A /* stub.c */; };
+		69DEA63F1F8FC57A00B1AB7A /* stub.c in Sources */ = {isa = PBXBuildFile; fileRef = 69DEA6261F8FC44200B1AB7A /* stub.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 050DB890148932FA00812267;
 			remoteInfo = CeedMath.mac;
+		};
+		69DEA6231F8FC3CC00B1AB7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 050DB888148932FA00812267 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 691539E41D86E838001F00B3;
+			remoteInfo = CeedMath.tvos;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -87,6 +96,9 @@
 		0527788B148BAA66000DF81B /* CeedMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CeedMath.h; sourceTree = "<group>"; };
 		05CBD6091489601F008AB772 /* libCeedMath.ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCeedMath.ios.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		691539F91D86E838001F00B3 /* libCeedMath.tvos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCeedMath.tvos.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		69DEA6221F8FC3A600B1AB7A /* libCeedMath-stub.tvos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libCeedMath-stub.tvos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69DEA6261F8FC44200B1AB7A /* stub.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stub.c; sourceTree = SOURCE_ROOT; };
+		69DEA63E1F8FC55F00B1AB7A /* libCeedMath-stub.ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libCeedMath-stub.ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +131,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		69DEA61C1F8FC3A500B1AB7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69DEA6381F8FC55F00B1AB7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -126,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				050DB89F1489332C00812267 /* Sources */,
+				69DEA6251F8FC43000B1AB7A /* Other Sources */,
 				0527787B148B7339000DF81B /* CeedMathDemo */,
 				050DB892148932FA00812267 /* Products */,
 			);
@@ -138,6 +165,8 @@
 				05CBD6091489601F008AB772 /* libCeedMath.ios.a */,
 				05277879148B7339000DF81B /* CeedMathDemo */,
 				691539F91D86E838001F00B3 /* libCeedMath.tvos.a */,
+				69DEA6221F8FC3A600B1AB7A /* libCeedMath-stub.tvos.a */,
+				69DEA63E1F8FC55F00B1AB7A /* libCeedMath-stub.ios.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,6 +196,15 @@
 				0527787C148B7339000DF81B /* main.c */,
 			);
 			path = CeedMathDemo;
+			sourceTree = "<group>";
+		};
+		69DEA6251F8FC43000B1AB7A /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				69DEA6261F8FC44200B1AB7A /* stub.c */,
+			);
+			name = "Other Sources";
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +333,39 @@
 			productReference = 691539F91D86E838001F00B3 /* libCeedMath.tvos.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		69DEA60D1F8FC3A500B1AB7A /* CeedMath-stub.tvos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69DEA61D1F8FC3A500B1AB7A /* Build configuration list for PBXNativeTarget "CeedMath-stub.tvos" */;
+			buildPhases = (
+				69DEA6191F8FC3A500B1AB7A /* Sources */,
+				69DEA61C1F8FC3A500B1AB7A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69DEA6241F8FC3CC00B1AB7A /* PBXTargetDependency */,
+			);
+			name = "CeedMath-stub.tvos";
+			productName = CeedMath;
+			productReference = 69DEA6221F8FC3A600B1AB7A /* libCeedMath-stub.tvos.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		69DEA6291F8FC55F00B1AB7A /* CeedMath-stub.ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69DEA6391F8FC55F00B1AB7A /* Build configuration list for PBXNativeTarget "CeedMath-stub.ios" */;
+			buildPhases = (
+				69DEA6351F8FC55F00B1AB7A /* Sources */,
+				69DEA6381F8FC55F00B1AB7A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CeedMath-stub.ios";
+			productName = CeedMath;
+			productReference = 69DEA63E1F8FC55F00B1AB7A /* libCeedMath-stub.ios.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -319,6 +390,8 @@
 				050DB890148932FA00812267 /* CeedMath.mac */,
 				05CBD5F71489601F008AB772 /* CeedMath.ios */,
 				691539E41D86E838001F00B3 /* CeedMath.tvos */,
+				69DEA60D1F8FC3A500B1AB7A /* CeedMath-stub.tvos */,
+				69DEA6291F8FC55F00B1AB7A /* CeedMath-stub.ios */,
 				05277878148B7339000DF81B /* CeedMathDemo */,
 			);
 		};
@@ -360,6 +433,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		69DEA6191F8FC3A500B1AB7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69DEA6281F8FC44F00B1AB7A /* stub.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69DEA6351F8FC55F00B1AB7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69DEA63F1F8FC57A00B1AB7A /* stub.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -367,6 +456,11 @@
 			isa = PBXTargetDependency;
 			target = 050DB890148932FA00812267 /* CeedMath.mac */;
 			targetProxy = 05277885148B73B6000DF81B /* PBXContainerItemProxy */;
+		};
+		69DEA6241F8FC3CC00B1AB7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 691539E41D86E838001F00B3 /* CeedMath.tvos */;
+			targetProxy = 69DEA6231F8FC3CC00B1AB7A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -782,6 +876,162 @@
 			};
 			name = AdHoc;
 		};
+		69DEA61E1F8FC3A500B1AB7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+					"\"$(OBJROOT)/UninstalledProducts/iphoneos\"",
+					"\"$(OBJROOT)/UninstalledProducts\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = CeedMath;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		69DEA61F1F8FC3A500B1AB7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+					"\"$(OBJROOT)/UninstalledProducts/iphoneos\"",
+					"\"$(OBJROOT)/UninstalledProducts\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = CeedMath;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		69DEA6201F8FC3A500B1AB7A /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+					"\"$(OBJROOT)/UninstalledProducts/iphoneos\"",
+					"\"$(OBJROOT)/UninstalledProducts\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = CeedMath;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Distribution;
+		};
+		69DEA6211F8FC3A500B1AB7A /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+					"\"$(OBJROOT)/UninstalledProducts/iphoneos\"",
+					"\"$(OBJROOT)/UninstalledProducts\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = CeedMath;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = AdHoc;
+		};
+		69DEA63A1F8FC55F00B1AB7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+					"\"$(OBJROOT)/UninstalledProducts/iphoneos\"",
+					"\"$(OBJROOT)/UninstalledProducts\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = CeedMath;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		69DEA63B1F8FC55F00B1AB7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+					"\"$(OBJROOT)/UninstalledProducts/iphoneos\"",
+					"\"$(OBJROOT)/UninstalledProducts\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = CeedMath;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Release;
+		};
+		69DEA63C1F8FC55F00B1AB7A /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+					"\"$(OBJROOT)/UninstalledProducts/iphoneos\"",
+					"\"$(OBJROOT)/UninstalledProducts\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = CeedMath;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Distribution;
+		};
+		69DEA63D1F8FC55F00B1AB7A /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+					"\"$(OBJROOT)/UninstalledProducts/iphoneos\"",
+					"\"$(OBJROOT)/UninstalledProducts\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = CeedMath;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = AdHoc;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -836,6 +1086,28 @@
 				691539F61D86E838001F00B3 /* Release */,
 				691539F71D86E838001F00B3 /* Distribution */,
 				691539F81D86E838001F00B3 /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69DEA61D1F8FC3A500B1AB7A /* Build configuration list for PBXNativeTarget "CeedMath-stub.tvos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69DEA61E1F8FC3A500B1AB7A /* Debug */,
+				69DEA61F1F8FC3A500B1AB7A /* Release */,
+				69DEA6201F8FC3A500B1AB7A /* Distribution */,
+				69DEA6211F8FC3A500B1AB7A /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69DEA6391F8FC55F00B1AB7A /* Build configuration list for PBXNativeTarget "CeedMath-stub.ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69DEA63A1F8FC55F00B1AB7A /* Debug */,
+				69DEA63B1F8FC55F00B1AB7A /* Release */,
+				69DEA63C1F8FC55F00B1AB7A /* Distribution */,
+				69DEA63D1F8FC55F00B1AB7A /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
