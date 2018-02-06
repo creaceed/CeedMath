@@ -57,6 +57,13 @@
 			remoteGlobalIDString = 050DB890148932FA00812267;
 			remoteInfo = CeedMath.mac;
 		};
+		056306402029C24600B1FCE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 050DB888148932FA00812267 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05CBD5F71489601F008AB772;
+			remoteInfo = CeedMath.ios;
+		};
 		69DEA6231F8FC3CC00B1AB7A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 050DB888148932FA00812267 /* Project object */;
@@ -360,6 +367,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				056306412029C24600B1FCE8 /* PBXTargetDependency */,
 			);
 			name = "CeedMath-stub.ios";
 			productName = CeedMath;
@@ -456,6 +464,11 @@
 			isa = PBXTargetDependency;
 			target = 050DB890148932FA00812267 /* CeedMath.mac */;
 			targetProxy = 05277885148B73B6000DF81B /* PBXContainerItemProxy */;
+		};
+		056306412029C24600B1FCE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05CBD5F71489601F008AB772 /* CeedMath.ios */;
+			targetProxy = 056306402029C24600B1FCE8 /* PBXContainerItemProxy */;
 		};
 		69DEA6241F8FC3CC00B1AB7A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
