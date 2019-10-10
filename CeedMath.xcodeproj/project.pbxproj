@@ -385,11 +385,11 @@
 			};
 			buildConfigurationList = 050DB88B148932FA00812267 /* Build configuration list for PBXProject "CeedMath" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
+				Base,
 			);
 			mainGroup = 050DB886148932FA00812267;
 			productRefGroup = 050DB892148932FA00812267 /* Products */;
