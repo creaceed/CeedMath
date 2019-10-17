@@ -13,6 +13,7 @@
 #define atan2_x atan2f
 #define sqrt_x sqrtf
 #define fabs_x fabsf
+#define floor_x floorf
 #endif
 
 // Define double precision
@@ -28,6 +29,7 @@
 #define atan2_x atan2
 #define sqrt_x sqrt
 #define fabs_x fabs
+#define floor_x floor
 #endif
 
 #if defined (C3_DEFINE_GENERIC_SINGLE) || defined (C3_DEFINE_GENERIC_DOUBLE)
@@ -63,6 +65,7 @@
 #undef atan2_x
 #undef sqrt_x
 #undef fabs_x
+#undef floor_x
 
 #undef c3fx
 #undef c3vx

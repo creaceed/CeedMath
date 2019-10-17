@@ -18,6 +18,7 @@
 #define atan2_x atan2
 #define sqrt_x sqrt
 #define fabs_x fabs
+#define floor_x floor
 
 #define val_x  c3vx(val)
 #define vecn_x c3vx(vecn)
@@ -52,6 +53,7 @@
 #undef atan2_x
 #undef sqrt_x
 #undef fabs_x
+#undef floor_x
 
 #undef c3fx
 #undef c3vx

@@ -1,4 +1,11 @@
 
+#pragma mark val
+// ================== val Functions
+val_x c3fx(val_mod)(val_x x, val_x y)
+{
+	return x - y * floor_x(x/y);
+}
+
 #pragma mark vec2
 // ================== vec2d Functions
 vecn_x c3fx(vec2_copy)(vec2_x res, const vec2_x src)
@@ -447,6 +454,82 @@ vecn_x c3fx(vec3_refract)(vec3_x res, const vec3_x a, const normal_x normal, val
 	}
 }
 
+// rgb in [0,1], hsl in [0,1]
+vecn_x c3fx(vec3_rgb2hsl)(vec3_x hsl, const vec3_x rgb)
+{
+	val_x MAX = C3MAX(rgb[0], C3MAX(rgb[1], rgb[2]));
+	val_x MIN = C3MIN(rgb[0], C3MIN(rgb[1], rgb[2]));
+	val_x DIFF = C3MAX(MAX-MIN, 1e-6);
+	// Make sure MAX > MIN (zero div!)
+	
+	//Compute luminosity
+	val_x l = (MIN + MAX) / 2.0;
+	
+	//Compute saturation
+	val_x s = (l > 0.5 ? DIFF / (MIN + MAX) : DIFF / (2.0 - MAX - MIN));
+	
+	//Compute hue
+	val_x h = (MAX == rgb[0] ? (rgb[1] - rgb[2]) / DIFF : (MAX == rgb[1] ? 2.0 + (rgb[2] - rgb[0]) / DIFF : 4.0 + (rgb[0] - rgb[1]) / DIFF));
+	h /= 6.0;
+	h = (h < 0.0 ? 1.0 + h : h);
+	
+	hsl[0] = h;
+	hsl[1] = s;
+	hsl[2] = l;
+	
+	return hsl;
+}
+
+vecn_x c3fx(vec3_hsl2rgb)(vec3_x rgb, const vec3_x hsl)
+{
+	vec3_x k = {
+		0.0 + 12.0 * hsl[0],
+		8.0 + 12.0 * hsl[0],
+		4.0 + 12.0 * hsl[0]
+	};
+
+	k[0] = c3fx(val_mod)(k[0], 12.0);
+	k[1] = c3fx(val_mod)(k[1], 12.0);
+	k[2] = c3fx(val_mod)(k[2], 12.0);
+
+	val_x a = hsl[1] * C3MIN(hsl[2], 1.0-hsl[2]);
+	
+	rgb[0] = hsl[2] - a * C3MAX(C3MIN(C3MIN(k[0]-3.0, 9.0-k[0]), 1.0), -1.0);
+	rgb[1] = hsl[2] - a * C3MAX(C3MIN(C3MIN(k[1]-3.0, 9.0-k[1]), 1.0), -1.0);
+	rgb[2] = hsl[2] - a * C3MAX(C3MIN(C3MIN(k[2]-3.0, 9.0-k[2]), 1.0), -1.0);
+	
+	return rgb;
+}
+
+/*highp vec3 rgb2hsl(highp vec3 color)
+						{
+							//Compute min and max component values
+							highp float MAX = max(color.r, max(color.g, color.b));
+							highp float MIN = min(color.r, min(color.g, color.b));
+							highp float DIFF = max(MAX-MIN, 1e-6);
+							//Make sure MAX > MIN to avoid division by zero later
+//							MAX = max(MIN + 1e-6, MAX);
+
+							//Compute luminosity
+							highp float l = (MIN + MAX) / 2.0;
+
+							//Compute saturation
+							highp float s = (l > 0.5 ? DIFF / (MIN + MAX) : DIFF / (2.0 - MAX - MIN));
+
+							//Compute hue
+							highp float h = (MAX == color.r ? (color.g - color.b) / DIFF : (MAX == color.g ? 2.0 + (color.b - color.r) / DIFF : 4.0 + (color.r - color.g) / DIFF));
+							h /= 6.0;
+							h = (h < 0.0 ? 1.0 + h : h);
+
+							return vec3(h, s, l);
+						}
+						highp vec3 hsl2rgb(highp vec3 hsl )
+						{
+							highp vec3 k = mod(vec3(0.0, 8.0, 4.0) + 12.0 * hsl.x, 12.0);
+							highp float a = hsl.y * min(hsl.z, 1.0-hsl.z);
+							return hsl.z - a * max(min(min(k-3.0, 9.0-k), 1.0), -1.0);
+						}
+*/
 #pragma mark normal
 // ================== normal Functions
 bool c3fx(normal_transform)(normal_x res, const mat4_x mat, const normal_x src)

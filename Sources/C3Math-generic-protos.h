@@ -1,4 +1,10 @@
 
+// val
+#pragma mark -
+#pragma mark val
+#pragma mark -
+c3inline val_x c3fx(val_mod)(val_x x, val_x y);
+
 // vec2
 #pragma mark -
 #pragma mark vec2
@@ -75,6 +81,9 @@ c3inline vecn_x c3fx(vec3_refract)(vec3_x res, const vec3_x a, const normal_x no
 c3extern vecn_x c3fx(vec3_rotate_centered_axis)(vec3_x res, const vec3_x src, val_x a, const normal_x axis, const vec3_x center);
 c3extern val_x  c3fx(vec3_angle)(const vec3_x a, const vec3_x b);
 c3extern val_x  c3fx(vec3_oriented_angle)(const vec3_x a, const vec3_x b, const vec3_x ref);
+
+c3inline vecn_x c3fx(vec3_rgb2hsl)(vec3_x hsl, const vec3_x rgb);
+c3inline vecn_x c3fx(vec3_hsl2rgb)(vec3_x rgb, const vec3_x hsl);
 
 // normal
 #pragma mark -
