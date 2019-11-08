@@ -482,11 +482,11 @@ vecn_x c3fx(vec3_rgb2hsl)(vec3_x hsl, const vec3_x rgb)
 
 vecn_x c3fx(vec3_hsl2rgb)(vec3_x rgb, const vec3_x hsl)
 {
-	vec3_x k = {
-		0.0 + 12.0 * hsl[0],
-		8.0 + 12.0 * hsl[0],
-		4.0 + 12.0 * hsl[0]
-	};
+	vec3_x k;
+	
+	k[0] = (0.0 + 12.0 * hsl[0]);
+	k[1] = (8.0 + 12.0 * hsl[0]);
+	k[2] = (4.0 + 12.0 * hsl[0]);
 
 	k[0] = c3fx(val_mod)(k[0], 12.0);
 	k[1] = c3fx(val_mod)(k[1], 12.0);
