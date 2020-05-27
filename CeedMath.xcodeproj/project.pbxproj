@@ -236,7 +236,7 @@
 		050DB888148932FA00812267 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1110;
+				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = Creaceed;
 			};
 			buildConfigurationList = 050DB88B148932FA00812267 /* Build configuration list for PBXProject "CeedMath" */;
@@ -383,6 +383,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				HEADER_SEARCH_PATHS = (
 					"\"$(DSTROOT)\"",
 					"\"$(CONFIGURATION_BUILD_DIR)\"",
@@ -396,6 +397,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				HEADER_SEARCH_PATHS = (
 					"\"$(DSTROOT)\"",
 					"\"$(CONFIGURATION_BUILD_DIR)\"",
