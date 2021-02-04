@@ -10,7 +10,7 @@
 #define CR_HIDDEN_SYMBOL_LINK static inline
 #endif
 
-CR_HIDDEN_SYMBOL_LINK int __cr_stub_func() {
+CR_HIDDEN_SYMBOL_LINK int __cr_stub_func(void) {
 	//#define VARCONCAT(PREFIX, NAME) PREFIX ## NAME
 	//	static int VARCONCAT(__VAR, CREACEED_STUB_FUNCNAME) = 0;
 	return 0;
