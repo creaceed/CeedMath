@@ -236,7 +236,7 @@
 		050DB888148932FA00812267 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1230;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = Creaceed;
 			};
 			buildConfigurationList = 050DB88B148932FA00812267 /* Build configuration list for PBXProject "CeedMath" */;
