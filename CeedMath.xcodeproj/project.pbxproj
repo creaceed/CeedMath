@@ -420,7 +420,7 @@
 					"\"$(OBJROOT)/UninstalledProducts/iphoneos\"",
 					"\"$(OBJROOT)/UninstalledProducts\"",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = CeedMath;
 				SDKROOT = iphoneos;
@@ -443,7 +443,7 @@
 					"\"$(OBJROOT)/UninstalledProducts/iphoneos\"",
 					"\"$(OBJROOT)/UninstalledProducts\"",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = CeedMath;
 				SDKROOT = iphoneos;
@@ -464,7 +464,7 @@
 					"\"$(OBJROOT)/UninstalledProducts/iphoneos\"",
 					"\"$(OBJROOT)/UninstalledProducts\"",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = CeedMath;
 				SDKROOT = iphoneos;
@@ -485,7 +485,7 @@
 					"\"$(OBJROOT)/UninstalledProducts/iphoneos\"",
 					"\"$(OBJROOT)/UninstalledProducts\"",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = CeedMath;
 				SDKROOT = iphoneos;
